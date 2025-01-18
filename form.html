@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Photography and Videography Scheduling System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Site logo -->
+    <label class="logo">CaptureCue</label>
+
+    <!-- Navigation links -->
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="book.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="form">
+    <form action="">
+        <fieldset class="container">
+          <h2>Booking Form</h2>
+            <label for="name" id="name" autofocus required>Full Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="eMail" id="eMail" required>Email:</label>
+            <input type="email" name="eMail" id="eMail" required>
+            <label for="phoneNum" required>Phone Number:</label>
+            <input type="tel" name="phoneNum" id="phoneNum" pattern="[0-9]{11,12}" required>
+            <label for="service">Service Type:</label>
+            <select name="service" id="service">
+                <option value="Portrait">Portrait Photography</option>
+                <option value="Wedding">Wedding Photography</option>
+                <option value="Event">Event Videography</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                 <input type="date" id="date" name="date" required>
+  
+                <label for="time">Preferred Time Slot:</label>
+                 <select id="time" name="time" required>
+                 <option value="10-12">10:00 AM – 12:00 PM</option>
+                 <option value="12-2">12:00 PM – 2:00 PM</option>
+            </select>
+
+            <label for="participants">Number of Participants:</label>
+            <input type="number" id="participants" name="participants" min="1">
+  
+             <label for="location">Venue/Location:</label>
+             <input type="text" id="location" name="location">
+  
+             <label for="requests">Special Requests:</label>
+              <textarea id="requests" name="requests" rows="4" placeholder="Mention any themes, props, etc."></textarea><br>
+              <button type="submit" id="btnSub">Submit</button>
+            </fieldset>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
